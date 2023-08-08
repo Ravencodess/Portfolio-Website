@@ -7,11 +7,13 @@
 		<link
 			href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
 			rel="stylesheet" />
+		<meta name="description" content="My Portfolio website" />
+		<meta name="keywords" content="web design, html, css, js" />
 		<title>Dev server</title>
 	</head>
 	<body>
 		<header class="header container">
-			<button class="header__hamburger">
+			<button aria-expanded="false" id="hamburger" class="header__hamburger">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
@@ -24,6 +26,38 @@
 						d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 				</svg>
 			</button>
+			<!-- MOBILE MENU -->
+			<div id="mobile-menu" class="header__mobile-container">
+				<nav>
+					<ul class="header__mobile">
+						<li>
+							<a class="header__link" href="#about">About</a>
+						</li>
+						<li>
+							<a class="header__link" href="#work">Work</a>
+						</li>
+						<li>
+							<a class="header__link" href="#contact">Contact</a>
+						</li>
+						<li class="header__line"></li>
+						<li>
+							<button class="header__sun">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+									fill="currentColor">
+									<path
+										d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"></path>
+								</svg>
+							</button>
+						</li>
+						<li>
+							<a class="header__resume btn" href="#">Resume</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- DESKTOP NAV -->
 			<nav>
 				<ul class="header__menu">
 					<li>
@@ -53,14 +87,30 @@
 				</ul>
 			</nav>
 		</header>
-		<!-- <main>
-      <section class="section"></section>
-      <section class="section"></section>
-      <section class="section"></section>
-      <section class="section"></section>
-      <section class="section"></section>
-    </main>
-    <footer></footer> -->
+		<main>
+			<section class="hero container">
+				<img class="hero__img" src="/potrait.jpg" alt="Profile Picture" />
+				<p class="hero__subtitle">Hi, I'm Charles 👋</p>
+				<h1 class="hero__title">
+					Front-End <br />
+					Web Developer.
+				</h1>
+				<p class="hero__description">
+					Medical laboratory scientist || Front-End Developer ||
+					<strong>Cloud Computing Enthusiast</strong> || ALX Learner ||
+					<strong
+						>Passionate about Building Scalable and Secure Cloud
+						Solutions.</strong
+					>
+				</p>
+				<button class="hero__btn btn">Reach Out</button>
+			</section>
+			<!-- <section class="container"></section>
+      <section class="container"></section>
+      <section class="container"></section>
+      <section class="container"></section> -->
+		</main>
+		<footer></footer>
 		<script type="module" src="./src/main.js"></script>
 	</body>
 </html>
