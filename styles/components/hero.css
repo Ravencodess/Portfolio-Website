@@ -5,7 +5,7 @@
 	align-items: center;
 	text-align: center;
 	gap: 1rem;
-	margin-top: 2rem;
+	margin-top: 5.5rem;
 }
 
 .hero__img {
@@ -31,7 +31,6 @@
 }
 
 .hero__description {
-	max-width: 60ch;
 	color: var(--clr-slate600);
 	font-size: var(--size-sm);
 }
@@ -44,6 +43,7 @@
 @media (min-width: 475px) {
 	.hero {
 		gap: 1.5rem;
+		margin-top: 8rem;
 	}
 
 	.hero__img {

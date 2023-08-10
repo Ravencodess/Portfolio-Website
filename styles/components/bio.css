@@ -1,0 +1,147 @@
+.bio {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.bio__image_container {
+	margin: 0 auto;
+}
+
+.bio__content {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.bio__title {
+	color: var(--clr-light);
+	font-size: var(--size-2xl);
+}
+
+.bio__description {
+	color: var(--clr-slate600);
+	font-size: var(--size-sm);
+}
+
+.bio__hr {
+	border-color: var(--clr-slate800);
+}
+
+.bio__subtitle {
+	color: var(--clr-slate400);
+	font-size: var(--size-sm);
+}
+
+.bio__stack-container {
+	display: flex;
+}
+
+.bio__stack {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	list-style-type: "\21E5";
+	padding: 1em;
+}
+
+.bio__stack-item {
+	color: var(--clr-slate600);
+	font-size: var(--size-sm);
+}
+
+.bio__stack-item::before {
+	content: "";
+	margin-left: 1rem;
+}
+
+/* 'xs' : '475px */
+@media (min-width: 475px) {
+	.bio {
+		gap: 1.5rem;
+	}
+
+	.bio__content {
+		gap: 1.5rem;
+	}
+
+	.bio__title {
+		font-size: var(--size-3xl);
+	}
+
+	.bio__description {
+		font-size: var(--size-base);
+	}
+
+	.bio__subtitle {
+		font-size: var(--size-base);
+	}
+
+	.bio__stack-item {
+		font-size: var(--size-base);
+	}
+}
+
+/* 'sm': '640px', */
+/* @media (min-width: 640px) {  
+    
+} */
+
+/* 'md': '768px', */
+/* @media (min-width: 768px) { 
+
+ } */
+
+/* 'lg': '1024px', */
+@media (min-width: 1024px) {
+	.bio {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	.bio__content {
+		gap: 2rem;
+	}
+
+	.bio__title {
+		font-size: var(--size-4xl);
+	}
+
+	.bio__description {
+		font-size: var(--size-lg);
+	}
+
+	.bio__subtitle {
+		font-size: var(--size-lg);
+	}
+
+	.bio__stack-item {
+		font-size: var(--size-lg);
+	}
+}
+
+/* 'xl': '1280px', */
+@media (min-width: 1280px) {
+	.bio__title {
+		font-size: var(--size-5xl);
+	}
+
+	.bio__description {
+		font-size: var(--size-xl);
+	}
+
+	.bio__subtitle {
+		font-size: var(--size-xl);
+	}
+
+	.bio__stack-item {
+		font-size: var(--size-xl);
+	}
+}
+
+/* '2xl': '1536px', */
+/* @media (min-width: 1536px) { 
+    
+ } */

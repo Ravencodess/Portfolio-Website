@@ -46,8 +46,8 @@
 	transform: translateY(-3px);
 }
 
-section {
-	margin-top: 2rem;
+.section {
+	margin-top: 5rem;
 }
 
 .container {
@@ -99,5 +99,9 @@ section {
 @media (min-width: 1536px) {
 	.container {
 		max-width: 1536px;
+	}
+
+	.section {
+		margin-top: 10rem;
 	}
 }

@@ -71,3 +71,7 @@ a {
 strong {
 	color: var(--clr-indigo);
 }
+
+p {
+	max-width: 60ch;
+}
