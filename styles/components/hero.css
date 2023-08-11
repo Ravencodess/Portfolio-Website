@@ -12,7 +12,6 @@
 	border-radius: 50%;
 	width: 8rem;
 	height: 8rem;
-	object-fit: cover;
 }
 
 .hero__subtitle {
@@ -47,8 +46,8 @@
 	}
 
 	.hero__img {
-		width: 8.5rem;
-		height: 8.5rem;
+		width: 9rem;
+		height: 9rem;
 	}
 
 	.hero__subtitle {
@@ -81,8 +80,8 @@
 /* 'lg': '1024px', */
 @media (min-width: 1024px) {
 	.hero__img {
-		width: 9rem;
-		height: 9rem;
+		width: 9.5rem;
+		height: 9.5rem;
 	}
 
 	.hero__subtitle {

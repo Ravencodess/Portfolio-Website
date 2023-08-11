@@ -3,6 +3,7 @@ import "../styles/style.css";
 import "../styles/components/header.css";
 import "../styles/components/hero.css";
 import "../styles/components/bio.css";
+import "../styles/components/feature.css";
 import "../styles/utils.css";
 
 const hamburgerMenu = document.querySelector("#hamburger");
@@ -24,3 +25,4 @@ const closeMenu = () => {
 };
 
 hamburgerMenu.addEventListener("click", toggleMenu);
+mobileMenu.addEventListener("click", toggleMenu);

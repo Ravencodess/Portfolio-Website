@@ -12,7 +12,7 @@
 		<title>Dev server</title>
 	</head>
 	<body>
-		<header class="header container">
+		<header class="header">
 			<button aria-expanded="false" id="hamburger" class="header__hamburger">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -31,10 +31,10 @@
 				<nav>
 					<ul class="header__mobile">
 						<li>
-							<a class="header__link" href="#about">About</a>
+							<a class="header__link" href="#bio">About</a>
 						</li>
 						<li>
-							<a class="header__link" href="#work">Work</a>
+							<a class="header__link" href="#feature">Portfolio</a>
 						</li>
 						<li>
 							<a class="header__link" href="#contact">Contact</a>
@@ -61,10 +61,10 @@
 			<nav>
 				<ul class="header__menu">
 					<li>
-						<a class="header__link" href="#about">About</a>
+						<a class="header__link" href="#bio">About</a>
 					</li>
 					<li>
-						<a class="header__link" href="#work">Work</a>
+						<a class="header__link" href="#feature">Portfolio</a>
 					</li>
 					<li>
 						<a class="header__link" href="#contact">Contact</a>
@@ -88,7 +88,7 @@
 			</nav>
 		</header>
 		<main>
-			<section class="hero container">
+			<section id="hero" class="hero container">
 				<img class="hero__img" src="/potrait.jpg" alt="Profile Picture" />
 				<p class="hero__subtitle">Hi, I'm Charles 👋</p>
 				<h1 class="hero__title">
@@ -105,7 +105,7 @@
 				</p>
 				<button class="hero__btn btn">Reach Out</button>
 			</section>
-			<section class="bio section container">
+			<section id="bio" class="bio section container">
 				<div class="bio__content">
 					<h2 class="bio__title">Bio</h2>
 					<p class="bio__description">
@@ -149,9 +149,142 @@
 						alt="Image of Charles Working at His Desk" />
 				</div>
 			</section>
-			<!-- <section class="container"></section>
-			<section class="container"></section>
-			<section class="container"></section> -->
+			<section id="feature" class="feature section container">
+				<h2 class="bio__title">Portfolio</h2>
+				<p class="feature__subtitle"><strong>Featured Project</strong></p>
+				<div class="feature__title-wrapper">
+					<h3 class="feature__project-title">Parts &amp; Mech</h3>
+					<a
+						aria-label="link featured projects"
+						href="https://www.youtube.com/watch?v=1aqHUEn1oB0&t=88s"
+						target="_blank">
+						<svg
+							class="feature__link"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+						</svg>
+					</a>
+				</div>
+				<p class="feature__description">
+					Identifying the widespread problem of counterfeit spare parts in the
+					Nigerian market, We birthed the idea of Parts and Mech to provide only
+					quality and original spare parts to our users. <br />
+					Parts and Mech also provides 24/7 real-time auto mechanic support at a
+					click of a button ensuring our users can rest assured even if they
+					find themselves experincing car troubles in an unfamiliar location.
+				</p>
+				<div class="feature__detail">
+					<div class="feature__details-wrapper">
+						<h3 class="feature__detail-title">Collaborators</h3>
+						<ul class="feature__list">
+							<li class="feature__detail-item">Ochonogor Elohor</li>
+							<li class="feature__detail-item">Ogbuokiri Chinonso</li>
+							<li class="feature__detail-item">Udoh Comfort</li>
+							<li class="feature__detail-item">Joseph Victor</li>
+							<li class="feature__detail-item">Eyam David</li>
+						</ul>
+					</div>
+					<div class="feature__details-wrapper">
+						<h3 class="feature__detail-title">Project Type</h3>
+						<p class="feature__detail-item">ALX Team Project</p>
+					</div>
+					<div class="feature__details-wrapper">
+						<h3 class="feature__detail-title">Timeline</h3>
+						<p class="feature__detail-item">June 2023 - Present</p>
+					</div>
+				</div>
+				<div class="feature__showcase">
+					<div class="feature__img-container">
+						<div class="feature__img-wrapper">
+							<img src="/video-preview.png" alt="Video preview" />
+						</div>
+						<button class="feature__btn btn">
+							<a
+								href="https://www.youtube.com/watch?v=1aqHUEn1oB0&t=88s"
+								target="_blank"
+								>Watch Video</a
+							>
+						</button>
+					</div>
+					<div class="feature__img-container">
+						<div class="feature__img-wrapper">
+							<img src="/slide-preview.png" alt="Slide Preview" />
+						</div>
+						<button class="feature__btn btn">
+							<a href="/deck.pdf" target="_blank">View Slides</a>
+						</button>
+					</div>
+				</div>
+			</section>
+			<!-- <section class="container"></section> -->
+			<section class="bio section container">
+				<div class="bio__content">
+					<h2 class="bio__title">Elevator Pitch</h2>
+					<p class="bio__description">
+						Hello, I'm Charles Ngerem. <br />
+
+						I have an honorary bachelor's degree in medical laboratory science
+						with a strong technical background in project management and data
+						analysis. I am also a
+						<strong>front-end developer with experience in React.</strong>
+						<br />
+
+						I bring three essential skills to the table: empathy, team
+						leadership, and Creativity.
+					</p>
+					<p class="bio__description">
+						My expertise in finding solutions to problems with a constant drive
+						to learn and grow, leading cross-functional teams, and using data
+						insights to optimize performance has consistently delivered
+						exceptional results and helped build meaningful connections with
+						peers and teammates. <br />
+
+						What sets me apart is my ability to thrive in dynamic environments,
+						adapt quickly to challenges, and translate difficult situations into
+						creative solutions.
+						<a
+							>These qualities make me the best person to offer top-notch
+							creative and leadership solutions and drive success for your
+							organization.</a
+						>
+					</p>
+					<p class="bio__description">
+						By leveraging my skills, your organization will benefit from a
+						streamlined problem solving approach, increased team efficiency, and
+						data-informed decision-making. I'll make your job easier by
+						empowering you with the tools to maximize resources and achieve
+						remarkable outcomes. <br />
+
+						Now, I encourage you to take the next step.
+						<strong
+							>Bring me aboard your team so I can contribute to its success and
+							help your organization reach new heights and deliver optimal
+							results.</strong
+						>
+						<br />
+
+						In conclusion, with my experience, skills, and dedication, I am
+						eager to make a positive impact and become an invaluable asset to
+						your organization. Together, we can achieve unparalleled success.
+						Thank you for considering my proposition. Let's collaborate and make
+						a real difference!.
+					</p>
+				</div>
+				<div class="bio__image_container">
+					<video width="400" height="500" controls>
+						<!--   <source src="movie.mp4" type="video/mp4">
+						  <source src="movie.ogg" type="video/ogg">
+						Your browser does not support the video tag. -->
+					</video>
+				</div>
+			</section>
 		</main>
 		<footer></footer>
 		<script type="module" src="./src/main.js"></script>
