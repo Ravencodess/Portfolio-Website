@@ -4,25 +4,12 @@ import "../styles/components/header.css";
 import "../styles/components/hero.css";
 import "../styles/components/bio.css";
 import "../styles/components/feature.css";
+import "../styles/components/contact.css";
+import "../styles/components/footer.css";
 import "../styles/utils.css";
 
-const hamburgerMenu = document.querySelector("#hamburger");
-const mobileMenu = document.querySelector("#mobile-menu");
+import darkMode from "./utils/dark-mode";
+import mobileNav from "./utils/mobile-nav";
 
-const toggleMenu = () => {
-	const isOpened = hamburgerMenu.getAttribute("aria-expanded") === "true";
-	isOpened ? closeMenu() : openMenu();
-};
-
-const openMenu = () => {
-	mobileMenu.classList.add("active");
-	hamburgerMenu.setAttribute("aria-expanded", true);
-};
-
-const closeMenu = () => {
-	mobileMenu.classList.remove("active");
-	hamburgerMenu.setAttribute("aria-expanded", false);
-};
-
-hamburgerMenu.addEventListener("click", toggleMenu);
-mobileMenu.addEventListener("click", toggleMenu);
+darkMode();
+mobileNav();
