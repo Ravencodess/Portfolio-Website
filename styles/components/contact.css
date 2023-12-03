@@ -23,6 +23,21 @@
 	font-size: var(--size-sm);
 }
 
+.contact__social-icons {
+	display: flex;
+	margin-top: 20px;
+}
+
+.social-icon {
+	margin-right: 10px;
+}
+
+.social-icon img {
+	width: 30px; /* Adjust the size of the social media icons as needed */
+	height: 30px;
+	/* border-radius: 25%; */
+}
+
 /* xs */
 @media (min-width: 475px) {
 	.contact {
@@ -61,6 +76,12 @@
 	.contact__btn {
 		font-size: var(--size-lg);
 	}
+
+	.social-icon img {
+		width: 50px; /* Adjust the size of the social media icons as needed */
+		height: 50px;
+		/* border-radius: 25%; */
+	}
 }
 
 /* xl */
@@ -79,6 +100,12 @@
 
 	.contact__btn {
 		font-size: var(--size-xl);
+	}
+
+	.social-icon img {
+		width: 40px; /* Adjust the size of the social media icons as needed */
+		height: 40px;
+		/* border-radius: 25%; */
 	}
 }
 
